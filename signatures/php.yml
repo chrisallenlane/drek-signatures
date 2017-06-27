@@ -67,6 +67,13 @@ patterns:
   # misc interesting
   - \sassert\s*\(
   - \sgoto
-  - \sinclude
+  - \sinclude\s
+  - \sinclude_once\s
   - \smail\s*\(
-  - \srequire
+  - \srequire\s
+  - \srequire_once\s
+
+  # database operations
+  - \smysql_
+  - \smysqli_
+  - \swhereRaw
