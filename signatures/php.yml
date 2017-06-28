@@ -76,4 +76,7 @@ patterns:
   # database operations
   - \smysql_
   - \smysqli_
-  - \swhereRaw
+
+  # markup injections
+  - \s<\?=
+  - \secho

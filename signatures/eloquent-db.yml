@@ -1,0 +1,26 @@
+---
+
+# Eloquent ORM methods:
+# https://laravel.com/docs/5.4/queries#inserts
+
+filetypes:
+  - php
+
+patterns:
+
+  # database mutations
+  - \s\delete\s(
+  - \s\insertGetId\s(
+  - \s\insert\s(
+  - \s\truncate\s(
+  - \s\updateOrInsert\s(
+  - \s\update\s(
+
+  # injection vectors
+  - \s\havingRaw\s(
+  - \s\orHavingRaw\s(
+  - \s\orWhereRaw\s(
+  - \s\orderByRaw\s(
+  - \s\raw\s(
+  - \s\selectRaw\s(
+  - \s\whereRaw\s(
