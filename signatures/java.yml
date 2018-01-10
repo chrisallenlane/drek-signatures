@@ -27,3 +27,35 @@ patterns:
   - \sKeyStore
   - \sPrivateKey
   - \sSamlAuthToken
+  - \sKeyPairGenerator.initialize
+  - \srandom
+  - \ssecureRandom
+
+  # Serialization/Deserialization
+  - \sObjectInputStream.readObject
+  - \sObjectInputStream.readUnshared
+
+  # HTTP parameter sources/sinks
+  - \ssendRedirect
+  - \ssetStatus
+  - \saddHeader
+  - \sgetParameter
+  - \sgetHeader
+
+  # Potential injections
+  - \sgetAttribute
+  - \sgetContextPath
+  - \ssetAttribute
+  - \sjava.sql
+  - \sjava.xml
+
+  # Object management
+  - \stransient
+  - \sserialPersistentFields
+  - \swriteObject
+  - \swriteReplace
+  - \swriteExternal
+  - \sreadExternal
+  - \sSignedObject
+  - \sSealedObject
+  - \sGuardedObject
